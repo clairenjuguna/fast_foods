@@ -29,4 +29,8 @@ Route::middleware('auth')->group(function () {
 
 Route::get("/",[HomeController::class,"index"]);
 
+Route::get("/redirects",[HomeController::class,"redirects"]);
+
+
+
 require __DIR__.'/auth.php';
